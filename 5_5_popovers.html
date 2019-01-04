@@ -144,6 +144,23 @@
     function togglePopover() {
       $('#hello').popover('toggle');
     }
+
+    //POPOVER EVENTS
+    $('#hello').on('show.bs.popover', function () {
+      console.log('Popover Show');
+    });
+
+    $('#hello').on('shown.bs.popover', function () {
+      console.log('Popover Shown');
+    });
+
+    $('#hello').on('hide.bs.popover', function () {
+      console.log('Popover Hide');
+    });
+
+    $('#hello').on('hidden.bs.popover', function () {
+      console.log('Popover Hidden');
+    });
   </script>
 </body>
 
